@@ -4,13 +4,14 @@ Hello World! This repository will hold 100 sites. It's a project-based leaning s
 		- 10 sites
 		- Maximum 5 hours work each
 
-	* Javascript
+	* Javascript and it Frameworks
 		- 10 sites
+			- 3 Sites in raw Javascript
+			- 3 sites in Angular.js
+			- 2 sites in Node.js
+			- 2 Sites in Ember.js
+		
 		- Maximum 10 hours work each 
-
-	* Angular.js Framework
-		- 10 sites
-		Maximum 10 hours each
 
 	* Ruby on Rails
 		- 10 sites

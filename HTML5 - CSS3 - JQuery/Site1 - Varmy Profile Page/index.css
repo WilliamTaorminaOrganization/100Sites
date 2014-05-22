@@ -1,0 +1,91 @@
+/* CSS File */
+
+h1 {color: green;}
+
+
+.fullpage {	
+	margin: 15px;
+	border: 15px solid purple;
+	width: auto; 
+	height: auto; 
+	background-color: blue;
+}
+
+.profile_block
+{	
+	margin: 15px; 
+	padding: 15px;
+	border: 15px solid white;
+	width: auto; 
+	height: auto; 
+	background-color: green;
+}
+
+.badge_block
+{	
+	margin: 15px; 
+	padding: 15px;
+	border: 15px solid white;
+	width: auto; 
+	height: auto; 
+	background-color: green;
+}
+
+.contact_block
+{	
+	margin: 15px; 
+	padding: 15px;
+	border: 15px solid white;
+	width: auto; 
+	height: auto; 
+	background-color: green;
+}
+
+.mission_block
+{	
+	margin: 15px; 
+	padding: 15px;
+	border: 15px solid white;
+	width: auto; 
+	height: auto; 
+	background-color: green;
+}
+
+.goals_block
+{	
+	margin: 15px; 
+	padding: 15px;
+	border: 15px solid white;
+	width: auto; 
+	height: auto; 
+	background-color: green;
+}
+
+.impact_block
+{	
+	margin: 15px; 
+	padding: 15px;
+	border: 15px solid white;
+	width: auto; 
+	height: auto; 
+	background-color: green;
+}
+
+.button_block
+{	
+	margin: 15px; 
+	padding: 15px;
+	border: 15px solid white;
+	width: auto; 
+	height: auto; 
+	background-color: green;
+}
+
+.footernav_block{
+	margin: 15px; 
+	padding: 15px;
+	border: 15px solid white;
+	width: auto; 
+	height: auto; 
+	background-color: green;
+}
