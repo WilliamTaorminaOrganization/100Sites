@@ -31,6 +31,8 @@ h1 {color: green;}
 	height:100px;
 	border: 5px solid white;
 	border-radius: 100px;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .name_rank_score_block {
@@ -39,6 +41,9 @@ h1 {color: green;}
 	border: 1px solid white;
 	text-align: center;
 	font-size: 25px;
+	display: inline-block;
+	vertical-align: middle;
+
 }
 
 .badge_block
@@ -136,6 +141,8 @@ h1 {color: green;}
 	display: inline-block;
 	border: 2px solid black;
 	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .mission_block
 {	
@@ -167,7 +174,28 @@ h1 {color: green;}
 	height: auto; 
 	background-color: green;
 }
+.impact_table{
+	
+	margin: 0 auto;
+	width: auto;
 
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+tr,td{
+	width: 200px;
+	border: 3px solid black;
+
+
+}
+
+.impact_metric{
+
+
+
+}
 .button_block
 {	
 	margin: 10px; 
