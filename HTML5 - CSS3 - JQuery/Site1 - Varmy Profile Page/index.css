@@ -1,4 +1,7 @@
 /* CSS File */
+.clear{
+	clear: both;
+}
 
 h1 {color: green;}
 
@@ -13,48 +16,142 @@ h1 {color: green;}
 
 .profile_block
 {	
-	margin: 15px; 
-	padding: 15px;
+	margin: 10px; 
+	padding: 10px;
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
 	background-color: green;
+	text-align: center;
+	
+}
+
+.profile_image {
+	width:100px;
+	height:100px;
+	border: 5px solid white;
+	border-radius: 100px;
+}
+
+.name_rank_score_block {
+	width:auto;
+	height:100px;
+	border: 1px solid white;
+	text-align: center;
+	font-size: 25px;
 }
 
 .badge_block
 {	
-	margin: 15px; 
-	padding: 15px;
+	margin: 10px; 
+	padding: 10px;
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
 	background-color: green;
+	text-align: center;
+	
+}
+
+.badge_template{
+	width: 45px;
+	height:18px;
+	border: 2px solid black;
+	margin: 1px;
+	text-align: center;
+	background-color: blue;
+}
+.column_wrapper{
+	width: auto;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.column_template{
+	width:48px;
+	height: auto;
+	float: left;
+	padding: 1px;
+	text-align: center;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.column1 .badge_template{
+	background-color: green;
+}
+.column2 .badge_template{
+	background-color: black;
+}
+.column3 .badge_template{
+	background-color: purple;
+}
+.column4 .badge_template{
+	background-color: pink;
+}
+
+.column5 .badge_template{
+	background-color: yellow;
+}
+
+.column6 .badge_template{
+	background-color: brown;
 }
 
 .contact_block
 {	
-	margin: 15px; 
-	padding: 15px;
+	margin: 10px; 
+	padding: 10px;
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
 	background-color: green;
+	text-align: center;
 }
 
+.allied_button{
+	
+	width: 150px;
+	background-color: purple;
+	color: white;
+	border: 2px solid black;
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+.fist_image{
+	height: 30px;
+	vertical-align: middle;
+}
+
+.envelope_image{
+	height: 30px;
+	vertical-align: middle;
+}
+.paragraph_titles{
+	width:auto;
+	height: 18;
+	background-color: blue;
+	color: white;
+	display: inline-block;
+	border: 2px solid black;
+	font-size: 20px;
+}
 .mission_block
 {	
-	margin: 15px; 
-	padding: 15px;
+	margin: 10px; 
+	padding: 10px;
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
 	background-color: green;
+
 }
 
 .goals_block
 {	
-	margin: 15px; 
-	padding: 15px;
+	margin: 10px; 
+	padding: 10px;
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
@@ -63,8 +160,8 @@ h1 {color: green;}
 
 .impact_block
 {	
-	margin: 15px; 
-	padding: 15px;
+	margin: 10px; 
+	padding: 10px;
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
@@ -73,17 +170,40 @@ h1 {color: green;}
 
 .button_block
 {	
-	margin: 15px; 
-	padding: 15px;
+	margin: 10px; 
+	padding: 10px;
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
 	background-color: green;
+	text-align: center;
+}
+
+.logbook_button{
+	
+	height: auto;
+	width: 150px;
+	background-color: purple;
+	color: white;
+	border: 2px solid black;
+	font-size: 15px;
+	vertical-align: middle;
+}
+
+.resume_button{
+	
+	height: auto;
+	width: 150px;
+	background-color: purple;
+	color: white;
+	border: 2px solid black;
+	font-size: 15px;
+	vertical-align: middle;
 }
 
 .footernav_block{
-	margin: 15px; 
-	padding: 15px;
+	margin: 10px; 
+	padding: 10px;
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
