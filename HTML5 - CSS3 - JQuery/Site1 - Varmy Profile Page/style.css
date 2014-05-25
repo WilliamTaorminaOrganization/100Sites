@@ -8,10 +8,10 @@ h1 {color: green;}
 
 .fullpage {	
 	margin: 15px;
-	border: 15px solid purple;
+	border: 15px solid black;
 	width: auto; 
 	height: auto; 
-	background-color: blue;
+	background-color: white;
 }
 
 .profile_block
@@ -21,7 +21,7 @@ h1 {color: green;}
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
-	background-color: green;
+	background-color: white;
 	text-align: center;
 	
 }
@@ -67,7 +67,7 @@ h1 {color: green;}
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
-	background-color: green;
+	background-color: white;
 	text-align: center;
 	
 }
@@ -124,7 +124,7 @@ h1 {color: green;}
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
-	background-color: green;
+	background-color: white;
 	text-align: center;
 }
 
@@ -136,21 +136,24 @@ h1 {color: green;}
 	border: 2px solid black;
 	font-size: 20px;
 	vertical-align: middle;
+	margin: 5px;
 }
 
 .fist_image{
 	height: 30px;
 	vertical-align: middle;
+	margin: 5px;
 }
 
 .envelope_image{
 	height: 30px;
 	vertical-align: middle;
+	margin: 5px;
 }
 .paragraph_titles{
 	width:auto;
 	height: 18;
-	background-color: blue;
+	background-color: green;
 	color: white;
 	display: inline-block;
 	border: 2px solid black;
@@ -165,7 +168,7 @@ h1 {color: green;}
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
-	background-color: green;
+	background-color: white;
 
 }
 
@@ -176,7 +179,7 @@ h1 {color: green;}
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
-	background-color: green;
+	background-color: white;
 }
 
 .impact_block
@@ -186,7 +189,7 @@ h1 {color: green;}
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
-	background-color: green;
+	background-color: white;
 }
 .impact_table{
 	
@@ -224,7 +227,7 @@ tr,td{
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
-	background-color: green;
+	background-color: white;
 	text-align: center;
 }
 
@@ -252,17 +255,28 @@ tr,td{
 
 .footernav_block{
 	margin: 10px; 
-	padding: 10px;
 	border: 15px solid white;
 	width: auto; 
 	height: auto; 
-	background-color: green;
+	background-color: white;
+	text-align: right;
 }
 
-.nav_table{
-	
+.nav_table_2{
+	border: none;
 	margin: 0 auto;
 	width: auto;
 	height: auto;
 	text-align: center;
+}
+
+
+.profile_image_small {
+	width:65px;
+	height:65px;
+	border-radius: 100px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
