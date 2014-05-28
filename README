@@ -1,10 +1,22 @@
-Hello World! This repository will hold 100 sites. It's a project-based leaning strategy. The languauges and skills that I'll be pracitcing are:
+Hello World! This repository will hold 100 sites. It's a project-based leaning strategy. The languages and skills that I'll be practicing are:
 	
 	* HTML5 / CSS3 / JQuery
 		- 10 sites
-		- Maximum 5 hours work each
+			> Site # 1 - VArmy Tracer 
+				- Turning Balsamiq mock-ups into real HTML
+			> Site # 2 - The Works
+				- A fictional Pizza Shop Website that uses at least one of EVERY HTML AND CSS TAG in existence.
+			> Site # 3 - Bootstrap Bill
+				 - A site about my father Bill Sr., using the Bootstrap framework. 
+			> Site # 4 - Animation Nation
+				 - A site depicting the United States, that specifically focuses on CSS animations. Must use each animation at lease once. 
+			> Site # 5 - It's Good Form!
+				 - A site focusing on HTML form creation and submission. Must use all form Tags and all attributes related to these tags. 
 
-	* Javascript and it Frameworks
+		- Maximum 10 hours work each
+
+
+	* Java script and it Frameworks
 		- 10 sites
 			- 3 Sites in raw Javascript
 			- 3 sites in Angular.js
@@ -18,4 +30,4 @@ Hello World! This repository will hold 100 sites. It's a project-based leaning s
 			- 2 sites using someone elses code
 			- 2 sites using scaffolding
 			- 3 sites without database attached
-			- 4 sites with databases atached
+			- 4 sites with databases attached
