@@ -1,0 +1,74 @@
+.textOverVid{	
+	font: 40px Arial;
+	text-align: right;
+	color: white;
+	background-color: rgba(200,200,200,.7);
+	padding: 10px;
+}
+.greydiv{
+
+	background-color: blue;
+	height: 200px;
+}
+.invisibleSpacer{
+
+	height: 300px;
+	width: 100%;
+}
+.skillContainer{
+	width: 100%;
+	display: inline-block;
+	text-align: right;
+	margin: 0 auto;
+}
+
+.col1{
+	width: 300px;
+	display: inline-block;
+}
+
+.wordTitle{
+	font: 40px Arial;
+	text-align: center;
+	color: white;
+	background-color: rgba(200,200,200,.7);
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.portfolioPics{
+	height: 150px;
+	text-align: center;
+	border: 3px solid white;
+}
+
+
+.picGallery{
+	text-align: center;
+}
+
+
+table{
+	width: 100%;
+	margin: 0 auto;
+}
+
+meter{
+width: 150px;
+background: blue;
+
+}
+
+video {
+	position: absolute; 
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	background-size: cover;
+
+}
