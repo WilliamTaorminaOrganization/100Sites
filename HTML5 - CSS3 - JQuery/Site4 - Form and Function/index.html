@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>The worlds most complete HTML5 form!</header>
+
+		<form action="http://websiteURL.com" accept-charset="UTF-8" autocomplete="on" enctype="application/x-www-form-urlencoded" method="GET" name="awesomeForm" target="_blank"> 
+
+			<!-- The <form> tag defins an HTML form for user input. Below, I will list out and explain each of the attributes, and cooresponding attribute values, of the form tag. -->
+
+			<!-- The accept-charset attribute specifies the character encodings that are used for the form submission. Some examples character encodings are 'UTF-8' (character encoding for Unicode) 'ISO-8859-1' (character encoding for the Latin alphabet) and 'ASCII' (American Standard Code for Information Unterchange) -->
+			
+			<!-- The action attribute specifies where to send the form-data when a form is submittedm as a URL. The URL destinations can be absolute, or relative.-->
+
+			<!-- The autocomplete attribute specifies weather a form should have autocomplete on or off. The autocomplete values are based on values that have user has entered before, at any time in their browser. --> 
+			<!-- CANT GET THIS TO WORK YET-->
+			
+			<!-- The enctype attribute specifies how the form data should be encoded when submitting it to a server. There are three value options for this enctype attribute: 1) "application/x-www-form-urlencoded"  2) "multipart/form-data"  3) "text/plain". 
+
+			To further explain enctype attribute value: The "application/x-www-form-urlencoded" type is the default type of encoding. In this case, all characters are encoded before sent (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values). 
+
+			With the "multipart/form-data" enctype attribute value, no characters are encoded. This value is required when you are using a form that has a file upload control. 
+
+			Lastly, the "text/plain" enctype attribute value, spaces are converted to "+" symbols, but no special characters are encoded. 
+
+			As you can see above, I have chosen to use the "application/x-www-form-urlencoded" attribute value. -->
+
+			<!-- The method attribute specifies how to send form-data. The default form data submission method is GET, or (method="get"). This appends the form-data to the URL in name/value pairs.
+
+			The other form data submission method is POST, or (method="post") The POST form data submission method sends the form-data as an HTTP post transaction.  
+
+			There are a few things to remember when using the GET and POST attribute values for the method attribute:
+
+			Notes on GET:
+				- GET appends form-data into the URL in name/value pairs
+				- The length of the URL is limited (to about 3000 characters)
+				- You should never use get to send sensitive data! (because the data is visable in the URL)
+				- GET method is useful for form submissions where a user wants to bookmark the result.
+				- GET is better for non-secure data, like query strings in Google
+
+			Notes on Post:
+				- POST appends form-data inside the body of the HTTP request (data is not shown in the URL)
+				- POST form-data submission have no size limitations
+				- Form submissions with POST cannot be bookmarked 
+				-->
+
+			<!-- The form attribute value "name", is simply used to name the form. In this example, I've named the form "name="awesomeForm" -->
+
+			<!-- The 'novalidate' form attribute specifies that the form should not be validated when submitted. As a refresher, remember that form validation is a feature that does not allow the respondent to submit a reply until all required questions are completed properly. Sometimes this is also referred to 'restriction' Also, remember that the novalidate attribute is a boolean attribute.
+
+			You can see that in this example, I've chosen not to use it. I want my forms to be validated by default. -->
+
+			<!-- The last form attribute is 'target'. The 'target' attribute specifies where to display the response that is received back from the server, after submitting the form.
+
+			There are five attrubute values for the target form attribute: 
+				1) "_blank" ---- the response is displayed in a new window or tab
+				2) "_self" ---- the response is displayed in the same frame (the is the default)
+				3) "_parent" ---- the response is displayed in the parent frame
+				4) "_top" ---- the response is displayed in the full body of the window
+				5) "framename" ---- the response is displayed in the named iframe
+			
+			You can see that I've chosen to use the target="blank" value, because I want the form server response to display in a new page. -->
+		
+			<input accept="audio/*">
+			<input accept="video/*">
+			<input accept="image/*">
+			<input accept="csv">
+			<input alt="This is the alternative text.">
+
+
+			<!-- The input tag specifies an input feild where the user can input data. <input> elements are used within a form element to declare input controls where users can input data. The <input> feild can vary in many ways, depending on the type of sttribute. Below, I will list out and explain each of the input attributes, and cooresponding attribute values, for the input tag. -->
+
+			<!-- The 'accept' input attribute, is a sub-attribute of the 'type'attribute, and a co-addtibute to the 'file' attribute, specifies the types of files that a server can accept. There are four value options for this attribute: 
+
+				1) "audio/*" ---- all sound files are accepted
+				2) "video/*" ---- all video files are accepted
+				3) "image/*" ---- all image files are accpeted
+				4) "MIME_type" -- (Multipurpose Internet Mail Extensions, which later became known as Internet Media Types) Any valid MIME type, with no parameters. The list is extensive, and can be found here: http://www.iana.org/assignments/media-types/media-types.xhtml
+
+			I have used a seperate input field for each one of these file-type accept attributes. You'll note that the file-type I chosen for MIME_type is ".csv" -->
+
+			<!-- The next input attribute is the 'alt' attribute. The alt attribute provides an alternate text for the user, if he or she for some reason cannot view the intended image (or other content). -->
+
+			<!--    -->
+
+
+
+
+		</form>
+	</body>
+</html>
