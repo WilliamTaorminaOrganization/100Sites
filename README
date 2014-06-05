@@ -4,26 +4,34 @@ Hello World! This repository will hold 100 sites. It's a project-based leaning s
 		- 10 sites
 			> Site # 1 - VArmy Tracer 
 				- Turning Balsamiq mock-ups into real HTML
+				- Link to Final Product: http://optician-wolf-35686.bitballoon.com/
 
-			> Site # 2 - The HTML Works
+			> Site # 2 - The HTML5 Pizzashop Works
 				- A fictional Pizza Shop Website that uses at least one of EVERY HTML tag in existence.
+				- Reference Link: http://www.w3schools.com/tags/default.asp
+				- Link to Final Product: 
 
-			> Site # 3 - The CSS Works
-				- A portfolio Website for a General Contractor friend, incorporating every CSS tag in existence.
+			> Site # 3 - My Cousin Vinnie
+				- A quick portfolio Website for a General Contractor friend, incorporating several of the concepts I've learned so far.
+				- Link to Final Product: http://surgeon-harmonies-32507.bitballoon.com/
 
-			> Site # 4 - Event Attributes
+			> Site # 4 - Form and Function:
+				- An awesome one-pager HTML5 form, using every form input type, element, and attribute.
+			
+			> Site # 5 - The CSS Press:
+				- A mock newpaper landing page, incorporating every CSS property group, and sub-property.
+				- http://www.w3schools.com/cssref/
+
+			> Site #  - Event Attributes
 				- A fictional website for the Staples Center, incorporating every Event Attributes tag in existence.
 
-			> Site # 5 - Bootstrap Bill
+			> Site #  - Bootstrap Bill
 				 - A site about my father Bill Sr., using the Bootstrap framework. 
 
-			> Site # 6 - Animation Nation
+			> Site #  - Animation Nation
 				 - A site depicting the United States, that specifically focuses on CSS animations. Must use each css animation at lease once. 
-
-			> Site # 7 - It's Good Form!
-				 - A site focusing on HTML form creation and submission. Must use all form Tags and all attributes related to these tags. 
-
-			> Site # 8 - Blank Canvas 
+ 
+			> Site #  - Blank Canvas 
 				 - A site focusing on the <canvas> tag, and drawing a small animation / graphic using simple javascript. 
 			
 			> 
