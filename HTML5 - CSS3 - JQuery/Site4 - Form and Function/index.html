@@ -78,7 +78,20 @@
 			<input form="awesomeForm">
 			<input formaction="http://otherurlsite.com">
 			<input formenctype="application/x-www-form-urlencoded">
+			<input formenctype="encoded">
+			<input formenctype="multipart/form-data">
+			<imput formenctype="textplain">
 			<input formmethod="post">
+			<input formmethod="get">
+			<input formnovalidat="formnovalidate">
+			<input formtarget="_blank">
+			<input formtarget="_self">
+			<input formtarget="_parent">
+			<input formtarget="_top">
+			<input formtarget="framename">
+			<input height="50" width="50">
+
+
 		
 
 
@@ -126,9 +139,23 @@
 				- The post method sends the form-data as an HTTP post transaction
 				- Form submissions with the post method cannot be bookmarked. 
 				- The post method is more robust and secure than "get". Data transfer is unlimited with the Post method. -->
+			
+			<!-- The 'formnovalidate' input tag attrubute defines that form elements should not be validated when submitted. It is a boolean attribute. As with several other elements, it overrides the novalidate attribute of the <form> element. -->
 
+			<!-- The 'formtarget' input tag attribute specifies where to display the response that is received from the server after submitting the form. The 'formtarget' attribute overrides the target in the <form> element. Remember that the 'formtarget' attribute can be used with both type="submit" and type="image" 
+			
+				The five types of attribute values for the 'formtarget' tag are:
+				1) "_blank" - the response is displayed in a new window
+				2) "_self" - the response is displayed in the same frame (this is default)
+				3) "_parent" - the response is displayed in the parent frame
+				4) "_top" - the response is displayed in the full body of the window
+				5) framename - the response is displayed in the named iframe -->
 
+			<!-- The 'height' attribute of the input tag specifies the height (in pixels) of an <input> element (used only for type="image".) A tip about the 'height' attribute for the input tag: 
 
+				Always specify both the height and width attributes for images. If height and width are set, the space required for the image is reserved, when the page is loaded. However, without these attributes, the browser does not know the size of the image, and cannot reserve the appropriate space to it. The effect will be that the page layout wil change during loading (while images load) -->
+
+			<
 
 		</form>
 	</body>
