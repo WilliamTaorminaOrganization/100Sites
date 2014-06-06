@@ -7,7 +7,7 @@
 	<body>
 		<header>The worlds most complete HTML5 form!</header>
 
-		<form action="http://websiteURL.com" accept-charset="UTF-8" autocomplete="on" enctype="application/x-www-form-urlencoded" method="GET" name="awesomeForm" target="_blank"> 
+		<form action="http://websiteURL.com" accept-charset="UTF-8" autocomplete="on" enctype="application/x-www-form-urlencoded" method="GET" name="awesomeForm" id="awesomeForm" target="_blank"> 
 
 			<!-- The <form> tag defins an HTML form for user input. Below, I will list out and explain each of the attributes, and cooresponding attribute values, of the form tag. -->
 
@@ -67,8 +67,20 @@
 			<input accept="audio/*">
 			<input accept="video/*">
 			<input accept="image/*">
-			<input accept="csv">
+			<input accept="csv">	
 			<input alt="This is the alternative text.">
+			<input autocomplete="on">
+			<input autocomplete="off">
+			<input autofocus>
+			<input type="radio" checked>
+			<input type="checkbox" checked>
+			<input disabled>
+			<input form="awesomeForm">
+			<input formaction="http://otherurlsite.com">
+			<input formenctype="application/x-www-form-urlencoded">
+			<input formmethod="post">
+		
+
 
 
 			<!-- The input tag specifies an input feild where the user can input data. <input> elements are used within a form element to declare input controls where users can input data. The <input> feild can vary in many ways, depending on the type of sttribute. Below, I will list out and explain each of the input attributes, and cooresponding attribute values, for the input tag. -->
@@ -80,11 +92,40 @@
 				3) "image/*" ---- all image files are accpeted
 				4) "MIME_type" -- (Multipurpose Internet Mail Extensions, which later became known as Internet Media Types) Any valid MIME type, with no parameters. The list is extensive, and can be found here: http://www.iana.org/assignments/media-types/media-types.xhtml
 
-			I have used a seperate input field for each one of these file-type accept attributes. You'll note that the file-type I chosen for MIME_type is ".csv" -->
+			I have used a seperate input field for each one of these file-type accept attributes. You'll note that the file-type I've chosen for MIME_type is ".csv" -->
 
 			<!-- The next input attribute is the 'alt' attribute. The alt attribute provides an alternate text for the user, if he or she for some reason cannot view the intended image (or other content). -->
 
-			<!--    -->
+			<!-- 'The autocomplete' input tag attribute specifies whether an input element should have autocomplete enabled. Remember that both a form tag, and an input tag can contain the autocomplete attribute. Esentially, autocomplete allows the browser to predict the value. When a user starts to type in a field, the browser should display options to fill in the feild, based on earlier typed values. You'll notice above that I've inclued an input type for both, On and Off.-->
+
+			<!-- The 'autofocus' input tag attribute specifies that an <input> element should automatically get focus when the page loads.  -->
+
+			<!-- The 'checked' input tag attribute specifies that an input element should be pre-selected when the page loads (for type="checkbox" or type="radio). The cheched attribute can also be set after the page load, using Javascript. Remember, you can only use the 'checked' attribute with the type="checkbox" or type="radio". I've encluded two examples of both styles. --> 
+
+			<!-- The 'disabled' input tag attribute is used when an input element should be disabled. A disabled input element is unusable and un-clickable. The disabled attribuete can be set to keep a user from using teh input element until some other consitions has ben met (like selecting a checkbox), ect. Then, a JavaScript could remove the disabled value, and make the input element usable. Remeber, the disabled elements in a form will not be submitted. Also remember, the disabled attribute will not  work with <input type="hidden" -->
+
+			<!-- The 'form' input tag attribute specifies one or more forms the input element belongs to. The value of this attribute must be the same id attribute of a form element in the same document. This form="id" attribute can be useful if a submit button is above other included input fields. Remember that a form 'name' applies ot the whole form, whereas a form 'id' applies to more of a css style identification.-->
+
+			<!-- The 'formaction' input tag attribute specifies the URL of the file that will process the input control when the form is submitted, (for type="submit" and type="image") the 'formaction' attribute overrides the other, 'action' attribute of the <form> element. This override feature might be useful if you are building a form that has two types of user submit buttons, regular and admin, for example. -->
+
+			<!-- The 'formenctype' input tag attribute, specifies how the form data should be encoded when submitting to the server. This applies to type="submit" and type="image". This formenctype only applies to forms with method="post". There are three values for the formenctype attribute:
+
+				1) application/x-www-form-urlencoded - Default. All characters are encoded before sent. (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values)
+				2) multipart/form-data - No characters are encoded
+				3) text/plain - spaces are converted to "+", but no special characters are encoded -->
+
+			<!-- The 'formmethod' attribute defines th HTTP method for sending form-data to the action URL. The formmethod attribute overrides the more broad 'method' attribue from the <form> tag. As with the other examples of encoding attributes, the formmethod attribute can be used with type="submit" and type="image". The form-data that is submitted can be submitted as URL variables (method="get") or as HTTP post transcation (method="post"). Remember that there a few concepts of import relative to the "get" method and the "post" method:
+
+			Get Method:
+				- The get method appends the form-data to the URL in name/value pairs.
+				- The get method is useful for form submissions where a user wants to bookmark the result. 
+				- With the get method, there is a limit to how much data you can place in a URL, (varies between browsers), therefore, you cannot be sure that all of the form data will be correctly transferred. 
+				- Never use the get method to paas sensitive information. (Password and other sensitive information is visible in the broswers address bar.)
+
+			Post Method:
+				- The post method sends the form-data as an HTTP post transaction
+				- Form submissions with the post method cannot be bookmarked. 
+				- The post method is more robust and secure than "get". Data transfer is unlimited with the Post method. -->
 
 
 
