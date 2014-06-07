@@ -7,7 +7,7 @@
 	<body>
 		<header>The worlds most complete HTML5 form!</header>
 
-		<form action="http://websiteURL.com" accept-charset="UTF-8" autocomplete="on" enctype="application/x-www-form-urlencoded" method="GET" name="awesomeForm" id="awesomeForm" target="_blank"> 
+		<form action="http://hunter-washers-55673.bitballoon.com" accept-charset="UTF-8" autocomplete="on" enctype="application/x-www-form-urlencoded" method="POST" name="awesomeForm" id="awesomeForm" target="_blank"> 
 
 			<!-- The <form> tag defins an HTML form for user input. Below, I will list out and explain each of the attributes, and cooresponding attribute values, of the form tag. -->
 
@@ -64,17 +64,17 @@
 			
 			You can see that I've chosen to use the target="blank" value, because I want the form server response to display in a new page. -->
 		
-			<input accept="audio/*">
-			<input accept="video/*">
-			<input accept="image/*">
-			<input accept="csv">	
+			<input type="file" accept="audio/*" placeholder="Test">
+			<input type="file" accept="video/*">
+			<input type="file" accept="image/*">
+			<input type="file" accept="csv">	
 			<input alt="This is the alternative text.">
-			<input autocomplete="on">
+			<input type="text" autocomplete="on">
 			<input autocomplete="off">
 			<input autofocus>
 			<input type="radio" checked>
 			<input type="checkbox" checked>
-			<input disabled>
+			<input disabled placeholder="members only!">
 			<input form="awesomeForm">
 			<input formaction="http://otherurlsite.com">
 			<input formenctype="application/x-www-form-urlencoded">
@@ -90,6 +90,43 @@
 			<input formtarget="_top">
 			<input formtarget="framename">
 			<input height="50" width="50">
+			<input list="familyMembers" placeholder="List of Family Members">
+			
+			<datalist id="familyMembers">
+				<option value="Bill Sr.">
+				<option value="Cindy">
+				<option value="Natalie">
+				<option value="Jeremy">
+				<option value="Lucca">
+				<option value="Indiana">
+				<option value="Steve">
+				<option value="Kacey">
+				<option value="Will">
+				<option value="Charlotte">
+				<option value="Bill Jr.">
+				<option value="Nick">
+				<option value="Grandma Faye">
+				<option value="Lucy">
+			</datalist>
+
+			<input type="date" max="1984-01-01">
+			<input type="number" max="150">
+			<input type"text" maxlength="11">
+			<input type="date" min="2000-01-01">
+			<input type="number" min="5">
+			<input type="file" multiple>
+			<input type="email" multiple>
+			<input type="email" name="email">
+			<input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code" placeholder="pattern validation ">
+			<input type="email" placeholder="enter your email:">
+			<input type="email" readonly placeholder="You wish!">
+			<input type="tel" required>
+			<input type="text" size="100">
+			<input type="image" src="arrow.png" height="20">
+			<input type="number" step="5" min="-15" max="25">
+
+			<input type="submit">
+
 
 
 		
@@ -153,10 +190,68 @@
 
 			<!-- The 'height' attribute of the input tag specifies the height (in pixels) of an <input> element (used only for type="image".) A tip about the 'height' attribute for the input tag: 
 
-				Always specify both the height and width attributes for images. If height and width are set, the space required for the image is reserved, when the page is loaded. However, without these attributes, the browser does not know the size of the image, and cannot reserve the appropriate space to it. The effect will be that the page layout wil change during loading (while images load) -->
+				Always specify both the height and width attributes for images. If height and width are set, the space required for the image is reserved, when the page is loaded. However, without these attributes, the browser does not know the size of the image, and cannot reserve the appropriate space to it. The effect will be that the page layout wil change during loading (while images load). In the above example you'll notice that I used both height and width. -->
 
-			<
+			<!-- The 'list' attrubute for the input tag refers to a <datalist> element that contains pre-defined options for an input element. The 'list' attribute value is an id that is equiviliant to the id of a seperate datalist. You will notice in my code that I've used both the <input> tag (with id) and the <datalist> tag. -->
 
+			<!-- The 'max' attribute for the input tag specifies the maximum value for an input element. There are two types of values allowed for this element.
+				1) number - specifes the maximum value allowed.
+				2) date - specifies the maximum date allowed.
+
+			Remember, you can use the 'max' attribute together with the 'min' attribute to create a range of legal values. -->
+
+			<!-- The 'maxlength' attribute for the input tag specifies the maximum nuber of characters allowed in an <input> element. Interestingly, the default value is 524288 characters! -->
+
+			<!-- The 'min' attribute for the input tag specifies a minimum value for an input element. We've just recently covered this, in the 'max' attribute section. -->
+			
+			<!-- The 'multiple' attribute for the input tag specifies that a user can enter more than one value in an input element. This is a boolean attribute. The 'multiple' attribute works with the following input types:
+				1) email
+				2) file
+
+			Remember, that for the <input type="file">: to select multiple files, hold down the control key or the shift key while selecting. Also, for the <input type="email">: seperate each email with a comma. -->
+
+			<!-- The 'name' attribute specifies the name of the input element. The name attribute is used to reference elements in a Javascript, or to reference form data after a form is submitted. Important note: only form elements with a name attribute wil hav thier values passed when submitting a form. --> 
+
+			<!-- The 'pattern' attribute for the input tag specifies a regular expression (a sequence of javascript characters that form a search pattern.) that an input element is checked against. The pattern attribute works with the following input types: text, search, url, email, tel, and password. Use the global title attribute to describe the pattern to help the user. 
+			
+				More information about Regular Expressions: 
+				- A regular expression is a sequence of characters that forms a serach pattern. When you search for data in a text, you can use this search pattern to describe what you are searching for.
+				- A regular expression can be a single character, or a complicated pattern. Regular expressions can be used to perform all types of text search and text replace operations. 
+
+				Regular Expression Modifiers can be used to perform case-insensitive more global searches:
+
+					'i' - perform case sensitive matching
+					'g' - perform a global match (find all matches rather than stopping after the first match)
+					'm' - perform multiline matching
+
+				Regular Expression Patterns are comprised of several other types of characters:
+
+				Brackets are used to find a range of characters:
+					'[abc]' - find any of the characters between the brackets
+					'[0-9]' - find any of the digits between the brackets
+					'(x|y)' - find any of these alternatives, seperated with |
+
+				Metacharacters are characters with special meaning:
+					'\d' - find a digit
+					'\s' - find a whitespace character
+					'\b' - find a match at the beginning or at the end of a word
+					'\uxxxx' - find the unicode character specified by the hexidecimal number xxxx
+				
+				Quantifiers define quantities:
+					'n+' - matches any string that contains at least one 'n'
+					'n*' - matches sny string that contains zero or more more occurances of 'n'
+					'n?' - matches any string that contains zero or one occurances -->
+			<!--  The placeholder attribute of the input tag specifies a short hint that describes the expected value of an input element. The short hint is displayed in the input feild before the user enters a value. The placeholder attribute workds with the following input types: text, search, url, email, and password.  -->
+
+			<!-- The 'readonly' attribute specifies that an input field is read-only. The readonly attribute is a boolean attribute. A readonly input feild cannot be modified. (However, a user can tab to it, highlight it, and copy the text from it.) The readonly attribute can be set to keep a user from changing the value until some other conditions have been met (like selecting a checkbox, etc.) Then a JavaScript can remove the readonly value, and make the input field editable. -->
+
+			<!-- The 'required' attribute input tag specifies that an input feild must be filled out before submitting the form. The 'required' attribute is a boolean attribute. The 'required' attribute works with the following types: text, url, tel, email, password, date pickers, number, checkbox, radio, and file.  -->
+
+			<!-- The 'size' attribute for the input tag specifies the width, in characters, of an <input> element. The 'size' attribute works with the following input types: text, search, tel, url, email, password. Remember, the specify the maximum number of characters allowed in the input elemnt, use the 'maxlength' attribute. -->
+				
+			<!-- The 'src' attribute input tag specifies the URL of the image to use as a submit button (only for type="image"). Again, the 'src' attribute is required for <input type="image">, and can only be used with <input type="image">. The URL destination can be both absolutel or relative. -->
+
+			<!-- The 'step' attribute specifies the legal nunber of intervals for an input field. For example, if step="3", legal numbers would be -3, 0, 3, 6, ect. Remember that the 'step' attribute can be used together with the 'max and 'min' attributes to create a range of legal values. Also, the 'step' attribute works with the following input types: number, range, date, datetime, datetime-local, month, time and week. Also remember that the default is step value is 1. --> 
 		</form>
 	</body>
 </html>
