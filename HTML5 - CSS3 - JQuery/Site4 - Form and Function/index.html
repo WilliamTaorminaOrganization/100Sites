@@ -281,50 +281,39 @@
 			<!-- The 'type' attribute of the input tag element specifies the type of element ot display. The complete list of all input type values is below: 
 
 				<input type="button"> - defines a clickable button. (mostly used with a Javascript to activate a script)  
-
 				<input type="checkbox"> - defines a checkbox 
-
 				<input type="color"> - defines a color picker
-
 				<input type="date"> - defines a date control (year, month, and day (no time))
-				
 				<input type="datetime"> - defines a date and time control (year, month, day, hour, minute, decond, and fractional second, based on UTC time zone)
-
 				<input type="datetime-local"> - defines a date and time control (year, month, day, hour, monute, second, and fractional second. (no time zone))
-
 				<input type="email"> - defines a field for an email address
-
 				<input type="file"> - defines a file select field and a "Browse" button (for file uploads)
-
 				<input type="hidden"> - defines a hidden input field
-
 				<input type="image"> - defines an image as a submit button
-
 				<input type="month"> - defines a month and year control (no time zone)
-
 				<input type="number"> - defines a field for entereing a number
-
 				<input type="password"> - defines a password field. (characters are masked)
-
 				<input type="radio"> - defines a radio button
-
 				<input type="range"> - defins a control for entereing a number whose exact value is not important (like a slider control)
-
 				<input type="reset"> - defines a reset button (resets all form values to default values)
-
 				<input type="search"> - defines a field for entering a search string
-
 				<input type="submit"> - defines a submit button
-
 				<input type="tel"> - defines a field for entering a telephone number
-
 				<input type="test"> - default input field type. deines a singl-line text field. (default with 20 characters)
-
 				<input type="URL"> defines a field for entering a URL
+				<input type="week"> - defines a field for entering week and year control (no time zones)  -->
 
-				<input type="week"> - defines a field for entering week and year control (no time zones)
 
-				-->
+			<input value="hello">
+			<input type="image" src="arrow.png" width="25" height="50" >
+
+			<!-- The 'value' attribute of the Input tag, specifies the value of the input element. The value attribute is used for different input types:
+				* for "button", "reset", and "submit" - it defines the text on the button
+				* for "text", "password", and "hidden" - it defines the initial (default) value of the input field
+				* for "checkbox", "radio", "image", - it defines the value associates with the input  -->
+
+			<!-- the 'width' attribute of the input tag, spwdifies the width of an input element (only for type="image"). Rememebr to always spedify the height and the width attributes for images. This is because if height and width are set, the space required for the image is reserved when the page is loaded. But, without these attributes, the browser does not know the size of the image, and cannot reserve the apprepriate space to it. The effect will be that the page layout will change durrong loading. -->
+
 		</form>
 	</body>
 </html>
