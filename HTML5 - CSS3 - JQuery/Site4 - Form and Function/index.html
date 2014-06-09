@@ -314,6 +314,149 @@
 
 			<!-- the 'width' attribute of the input tag, spwdifies the width of an input element (only for type="image"). Rememebr to always spedify the height and the width attributes for images. This is because if height and width are set, the space required for the image is reserved when the page is loaded. But, without these attributes, the browser does not know the size of the image, and cannot reserve the apprepriate space to it. The effect will be that the page layout will change durrong loading. -->
 
+			<textarea></textarea>
+			<textarea autofocus></textarea>
+			<textarea cols="50"></textarea>
+			<textarea disabled></textarea>
+			<textarea form="awesomeForm"></textarea>
+			<textarea maxlength="100"></textarea>
+			<textarea name="blah"></textarea>
+			<textarea placeholder="Your longer answer here..."></textarea>
+			<textarea readonly></textarea>
+			<textarea required></textarea>
+			<textarea rows="4"></textarea>
+			<textarea wrap="hard" cols="10">hello</textarea>
+			<textarea wrap="soft" cols="5"></textarea>
+			
+			
+
+			<!--  The <textarea> tag defines a multiline input control. (Text Area) -->
+
+			<!-- The 'autofocus' attribute of the <textarea> tag specifies that a text are should autimatically get focus when the page loads. It is a boolean attribute. -->
+			
+			<!-- The 'cols' attribute of the <textarea> tag specifies the visible width of the text area. The default value for the 'col' attribute is 20.  -->
+
+			<!-- The 'disabled' attribue of the <textarea> tag specifies that the text area should be diabaled. It is a boolean attribute. A disabled textarea is unusable and not selectable (cannot be copied). The disabled attribute can keep be set to keep a user from using the textarea until some other condition has been met (like selecting a checkbox, etc.). Then, a  JavaScript could remove the disabled value, and make the text area usable.  -->
+
+			<!-- The 'form' attribute of the <textarea> tag specifies one or more forms the textarea belongs too. The value of this attribute must be the id attribute of a <form> element in the same document.  -->
+
+			<!-- The 'maxlength' attribute of the <textarea> tag specifies the maximum number of characters allowed in the text area.  -->
+
+			<!-- The 'name' attribute of the <textarea> tag specifies a name of a text area. The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted. -->
+
+			<!-- The 'placeholder' attribute of the <textarea> tag specifies a short hint that describes the expected value of a text area.-->
+
+			<!-- The 'readonly' attribute specifies that a textarea should be read only. It is a boolean attribute. In a read-only text area, the content cannot be changed, but the user can tab to it, highlight it, and copy content from it. The readonly attribute can be set to keep a user from using a text area until someo ther condition has been met (like selecting a checkbox, etc.). Then a JavaScript is required to remove the readonly value, and make the textarea editable.  -->
+
+			<!-- The 'required' attribute of the <textarea> tag specifies that a textarea is required / must be filled out (in order to submit the form.) -->
+
+			<!-- The 'rows' attribute of the <textarea> tag specifies the visible number of lines in a text area. Remember that the size of the taxearea can also be specified by the CSS height and width properties. The default value is two. -->
+
+			<!-- The 'wrap' attribute of the <textarea> tag specifies how the text in a text area is to be wrapped when submitted in a form. There are two value otions for this attribute:
+
+				1) "soft" - the text in the area is not wrapped when submitted in a form. This is default.
+				2) "hard" - the text in the textarea is wrapped (contains newlines) when submitted in a form. When hard is is used, the 'col' attribute must be specified. -->
+
+			<label><label><br>
+			<label for="male">Male</label>
+			<input type="radio" name="sex" id="male" value="male"><br>
+			<label for="female">Female</label>
+			<input type="checkbox" name"sex" id="female" value="female">
+			<label></label>
+
+			<!-- The <label> tag defines a label for an input element. The <label> element does not render as anything special for the user. However, it provides a usability improvement for mouse esers, because if the user clicks on the text within the <label> element, it toggles the control. The 'for' attribute of the <label> tag should be equal to the id attribute of the related element to bind them together. -->
+
+			<!-- The 'for' attribute for the <label> tag specifies which form element a label is bound to. -->
+
+			<!-- The 'form' attribute of the <label> tag specifies one or more forms the label belongs to. The value of this attribute must be the ID attribute of a <form> element in the same document. -->
+				
+			<fieldset></fieldset><br>
+			<fieldset disabled>
+				<input type="text"><br>
+			</fieldset><br>
+
+			<fieldset name="easySection">
+				<input type="button" value="That was easy!">
+			</fieldset><br>
+
+			<fieldset name="difficultSection">
+				<legend> This is the DifficultSection</legend>
+					<input type="date">
+					<input type="email" size="100" maxlength="100">
+					<input type="submit">
+			</fieldset>
+
+			<!-- The fieldset tag is used to group elements in a form. The fieldset tag draws a box around the related elements. -->
+
+			<!--  The 'disabled' attribute of the <fieldset> tag specifies that a group of related form elements should be disabled.  The 'disabled' attribute is a boolean attribute.  -->
+
+			<!-- The 'name' attribute specifies a name for the <fieldset> tag. The 'name' attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.  -->
+
+			<!--  The 'legend' element defines the caption for the <fieldset> element. -->
+
+			<select>
+				<option value="volvo">Volvo</option>
+				<option value="GMC">GMC</option>
+			</select>
+
+			<select autofocus>
+				<option value="puppy">puppy</option>
+				<option value="kitty">kitty</option>
+			</select>
+
+			<select disabled>
+				<option value="screws">Screws</option>
+				<option value="bolts">Bolts</option>
+				<option value="nuts">Nuts</option>
+			</select>
+
+			<form id="presForm">
+				Firstname:<input type="text" name="fname">
+				<input type="submit">
+			</form>
+			
+			<select name="presList" form="presForm">
+				<option value="carter">President Jimmy Carter</option>
+				<option value="taft">President William Taft</option>
+				<option value="wilson">President Woodrow Wilson</option>
+			</select>
+
+			<select multiple>
+				<option value="peanut">Peanut</option>
+				<option value="brazilnut">Brazil Nut</option>
+				<option value="almond">Almond</option>
+				<option value="cashew">Cashew</option>
+			</select>
+
+			<select name="icecreamFlavors">
+				<option value="rockyRoad">Rocky Road</option>
+				<option value="fudge">Chocolate Fudge</option>
+				<option value="vanilla">Vanilla</option>
+			</select>
+
+			<select name="neighborTypes" size="5">
+				<option value="loud">Loud</option>
+				<option value="quiet">Quiet</option>
+				<option value="funny">Funny</option>
+				<option value="strange">Strange</option>
+				<option value="crazy">Crazy</option>
+				<option value="invisible">Inviisible</option>
+			</select>
+
+			<!-- The <select> tag defines a dropdown list. The <option> tags inside the <select> tags define the available options in the list. -->
+
+			<!-- The 'autofocus' element of the <select> tag specifies that the drop-down list should automatically get focus when the page loads. This is a boolean attribute.  -->
+
+			<!--  The 'disabled' attriubte of the <select> tag specifies that a dropdown list should be disabled. -->
+
+			<!-- The 'form' attribute of the <selct> tag defines one or more forms the select field belongs to. The value of the 'form' attribute must be the id attribute of a <form> element in the same document. -->
+
+			<!-- The 'multiple' attribute of the <select> tag specifies that multiple options can be selected at once. The 'multiple' attribute is a boolean attribute.  -->
+
+			<!-- The 'name' attribute defines a name for a dropdown list. -->
+	
+			<!-- The 'size' attribute of the <select> tag defines the number of visible options in a select tag. The default value of the 'size' attribute is 1. If the 'multiple' attribue is present, the dfault value is 4. -->
+
 		</form>
 	</body>
 </html>
