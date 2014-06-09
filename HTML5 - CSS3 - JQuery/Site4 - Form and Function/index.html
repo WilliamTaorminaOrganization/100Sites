@@ -380,7 +380,7 @@
 			</fieldset><br>
 
 			<fieldset name="difficultSection">
-				<legend> This is the DifficultSection</legend>
+				<legend> This is the Difficult Section</legend>
 					<input type="date">
 					<input type="email" size="100" maxlength="100">
 					<input type="submit">
@@ -457,6 +457,247 @@
 	
 			<!-- The 'size' attribute of the <select> tag defines the number of visible options in a select tag. The default value of the 'size' attribute is 1. If the 'multiple' attribue is present, the dfault value is 4. -->
 
+			<select>
+				<optgroup label="Bed Sizes">
+					<option value="King">King</option>
+					<option value="Queen">Queen</option>
+					<option value="Double">Double</option>
+					<option value="twin">Twin</option>
+				</optgroup>
+			</select>
+
+			<select>
+				<optgroup label="Ninja Turtles" disabled>
+					<option value="Michelangelo">Michelangelo</option>
+					<option value="Donnatello">Donnatello</option>
+					<option value="Leonardo">Leonardo</option>
+					<option value="Raphael">Raphael</option>
+				</optgroup>
+			</select>
+
+			<select>
+				<optgroup label="Basketball Positions">
+					<option value="Point Guard">Point Guard</option>
+					<option value="Shooting Guard">Shooting Guard</option>
+					<option value="Power Forward">Power Forward</option>
+					<option value="Center">Center</option>
+				</optgroup>
+			</select>
+
+
+
+
+			<!-- The <optgroup> tag defines a group of related options in a drop-down list. If you have a long list of options, groups of related options are eaiser to handle for a user. -->
+
+			<!-- The 'disabled' attriute of the <optiongroup> tag specifies that an optiongroup should be disabled. A disabled optiongroup is unusable and unclickable. The 'diabsled' attribute is a boolean attribue.  -->
+
+			<!-- The 'label' attribute for the <optgroup> tag specifies a label for an option-group.  -->
+
+			<input list="Flower Types">
+				<datalist id="Flower Types">
+					<option value="Tulip">Tulip</option>
+					<option value="Rose">Rose</option>
+					<option value="Sunflower">Sunflower</option>
+					<option value="Daisy">Daisy</option>
+					<option value="Dahlia">Dahlia</option>
+				</datalist>
+
+			<select>
+				<optgroup label="Protein Types">
+					<option value="Beef">Beef</option>
+					<option value="Chicken">Chicken</option>
+					<option value="Pork" disabled>Pork</option>
+					<option value="Fish">Fish</option>
+				</optgroup>
+			</select>
+
+			<select>
+				<optgroup label="Facial Expressions">
+					<option value="Sad">Sad</option>
+					<option value="Happy" selected >Happy</option>
+					<option value="Confused">Confused</option>
+					<option value="Scared">Scared</option>
+				</optgroup>
+			</select>
+
+			<select>
+				<optgroup label="Types of Rice">
+					<option value="Browd">Brown Rice</option>
+					<option value="Black">Black Rice</option>
+					<option value="White">White Rice</option>
+					<option value="Wild">Wild Rice</option>
+				</optgroup>
+			</select>
+
+			<!-- The <option> tag define an option in a dropdown list. <option> elements go inside <select> or <datalist> elements.  -->
+
+			<!-- The 'disabled' attribute of the <option> tag specifies that an option should be disabled. The 'disabled' attribute is a boolean attribute. A disables element cannot be used and is unclickable. -->
+
+			<!-- The 'selected' attribute of the <option> tag specifies that an option should be preselected when the page loads. -->
+
+			<!-- The 'value' attribute specifies the text to be sent to the server. The content beterrn the opening <option> and closing </option> tags is whatever the browsers will display in a drop-down list. However, the value of the value attribute is what will be sent to the server when a form is submitted. Remember, if a value is not specified, the content will be passed as a value instead. -->
+
+
+			<button type="button">Hello World!</button>
+			<button type="button" autofocus>Autofocus Button</button>
+			<button type="button" disabled>Disabled Button</button>
+
+			<form id="weddingform">
+				What date is your Wedding:<input type="date"><br>
+				How many months have you been engaged?<input type="number"><br>
+			</form>
+
+			<button type="submit" form="weddingform" >WeddingForm Submit Button</button>
+
+			<form id="guestlist" action="demo_form.asp" method="get">
+				First Name:<input type="text">
+				Last Name:<input type="text">
+				<button type="submit">Submit</button>
+				<button type="submit" formaction="demo_admin.asp">Submit as Admin</button>
+			</form>
+
+			<fieldset>
+				<form action="demo_post_enctype.asp" method="post">
+					Make:<input type="text" name="CarMake" value="Car Brand:"><br>
+					Model:<input type="text" name"CarModel" value-"Car Year:"><br>
+					<button type="submit" formenctype="application/x-www-form-urlencoded">Submit with Character Encoding</button><br>
+					<button type="submit" forenctype="multipart/form-data">No Characters Will Be encoded if you use this Button!</button><br>
+					<button type="submit" name="text/plain" formenctype="text/plain">This is the text/plain Encoding button.</button><br>
+				</form>
+			</fieldset><br>
+			
+
+			<fieldset>
+				<form action="demo_form.asp" method="get" name="Medical History">
+					Dr. Name:<input type="text" name="drName"><br>
+					Date of Visit:<input type="date" name="visitDate"><br>
+					<button type="submit">Regular Submit</button>
+					<button type="submit" formmethod="post" formaction="demo_post.asp">Submit Using Post</button>
+					<button type="submit" formmethod="get" formaction="demo_post.asp">Submit Using Get<button>
+				</form>
+			</fieldset><br>
+
+			<fieldset>
+				<form name="Department Stores">
+					Name of Store: 
+					<select name="storeName">
+						<option value="Macys">Macy's</option>
+						<option value="Bloomingdales">Bloomingdales</option>
+						<option value="Gap">Gap</option>
+					</select><br>
+					<button type="submit"> Submit Normally</button><br>
+					<button type="submit" formnovalidate> Submit without Validation</button><br>
+				</form>
+			</fieldset>
+
+			<fieldset>
+				<form name="FavoriteCereal">
+					Name of Store: 
+					<select name="Cereal Name">
+						<option value="Pops">Pops</option>
+						<option value="FrostedFlakes">Frosted Flakes</option>
+						<option value="Kix">Kix</option>
+					</select><br>
+					<button type="submit" formtarget="_blank"> Submit this form, and open the response in a new tab/window.</button><br>
+					<button type="submit" formtarget="_self"> Submit this form, and open the response in this same frame.</button><br>
+					<button type="submit" formtarget="_parent"> Submit this form, and open the response and load the response in the parent frame.
+					</button><br>
+					<button type="submit" formtarget="_top"> Submit this form, and open the response in the full body of the window.</button><br>
+					<button type="submit" formtarget="blahIframe"> Submit this form, and open the response in the named iframe.</button><br>
+				</form>
+			</fieldset>
+
+			<fieldset>
+				<form action="demo_form.asp" method="get">
+					Choose your favorite type of Mathematics:<br>
+					<button name="subject" type="submit" value="Algebra">Algebra</button><br>
+					<button name="subject" type="submit" value="Geometry">Geometry</button><br>
+					<button name="subject" type="submit" value="Calculus">Calculus</button><br>
+				</form>
+			</fieldset>
+
+			<fieldset>
+				<form action="demo_form.asp" method="get" name="GroceryList">
+					Enter your list of items to purchase at the grocery store:<br>
+					Item # 1:<input type="text"><br>
+					Item # 2:<input type="text"><br>
+					Item # 3:<input type="text"><br>
+					Item # 4:<input type="text"><br>
+					Item # 5:<input type="text"><br>
+					Item # 6:<input type="text"><br>
+					Item # 7:<input type="text"><br>
+					Item # 8:<input type="text"><br>
+
+					What does this button do? (Don't worry. It actually does nothing...)<button name="groceryItem" type="button">Button</button><br>
+					Submit My Grocery List!<button name="groceryItem" type="submit" formtarget="_blank">Submit</button><br>
+					Ugh, I don't like this list. Let's rest everything.<button value="submit" type="reset">Reset This Form</button><br>
+				</form>
+			</fieldset>
+
+			<fieldset>
+				<form action="demo_form.asp" method="get">
+					Choose your vavorite Disney Character:<br>
+					<button name"character" type="submit" value="Daffy">Daffy Duck</button><br>
+					<button name"character" type="submit" value="Goofy">Goofy</button><br>
+					<button name"character" type="submit" value="Mickey">Mickey Mouse</button><br>
+				</form>
+			</fieldset>
+			<!-- The <button> tag defines a clickable button. Inside the button element, you can put content, like text or images. This is a the difference between this element and buttons created using the <input> tag. Remember to always specify the type attribute for a button-->	
+			
+			<!-- The 'autofocus' attribute of the <button> tag specifies that a button should automatically get focus when the page loads. This 'autofocus' attribute is a boolean attribute. -->
+
+			<!-- The 'disabled' attribute of the <button> tag specifies that a button should be disabled. This 'disabled' attibute is a booliean attrubute. A disabled button is unsuable and unclickable.  -->
+
+			<!-- The 'form' attribute specifies one or more forms the button belongs to. The value of this attribute must be the id attribute of a <form> element in the same document. -->
+
+			<!-- The 'formaction' attribute of the <button> tag soecifeis where to send the form data when the form is submitted. This attribute will override the form's 'action'attribute. The 'formaction' attribute is only used for buttons with type="submit". 
+
+				There are two possible values for the 'formaction' attribute:
+					1) An absolute URL - the full address of a page.
+						- (href="http://www.projectcitizen.com/formresult.asp")
+					2) A relative URL - points to a file within the current site. 
+						- (href="formresult.asp")  -->
+				
+			<!-- The 'formenctype' attribute of the <button> tag specifies how the form data should be encoded before sending it to a sever. This only applies to the type="submit" button-type. Remember that this will also override the form's enctype attribute. 
+
+				There are three possible values for this 'formenctype' attribute:
+					1) application/x-www-form-urlencoded - This is the default. All characters will be encoded before being sent. 
+					2) multipart/form-data - no character are encoded (use this when you are using form that have a file upload control. 
+					3) text/plain - spaces are converted to "+" symbols, but no special characters are encoded. -->
+
+			<!-- The 'formmethod' attribute of the <button> tag specifies which HTTP method to use when sending the form-data. This attribute overrides the form's method attribute. The formmethodis only used for buttons with type="submit". The form-data can be sent as URL variables (with method="get") or as HTTP post with (method="post"). 
+
+				Notes on the 'GET' formmethod:
+					- get 'formmethod' appends the form-data to the URL in the name/value pairs.
+					- get 'formmethod' is useful for form submissions where the user wants to bookmark the result.
+					- get 'formmethod' has a limit on how much data can be placed in the URL. (Be carefule not to lose data using this method)
+					- get 'formmethod' should not be used to pass sensitive information.
+
+				Notes on the 'POST' formmethod:
+					- post 'formmethod' sends the data as an HTTP post transaction
+					- post 'formmethod' form submissions cannot be bookmarked
+					- post 'frommethod' is more robust and secure than 'get'
+					- post 'formmethod' does not have size limitations -->
+
+			<!-- The 'formnovalidate' attribute of the <button> tag specifies that the form data shold not be validated on submission. This attribute overrides the form's novalidate attribute. Remember that the 'formnovalidate' is a boolean attribute, and can only be used for buttons of type="submit" -->
+				
+			<!-- The 'formtaget' attribute of the <button> tag specifies where to display the response after submitting the form. This attribute overrides the form's target attribute. The 'formtarget' attribute can only be used for button type="submit" 
+
+				There are five possible attribute value for the 'formtarget' attribute:
+					1) _blank - loads the response in a new window/tab.
+					2) _self - loads the response in the same frame (this is default).
+					3) _parent - loads the response in the parent frame.
+					4) _top - loads the response in the full body of thw window. 
+					5) framename - loads the response in the named frame. -->
+
+			<!-- The 'name' attribute specifies the name of the <button> element. The 'name' attribute is used to reference form-data after the form has been submitted, or to reference the element in a Javascript. Rememebr that several <button> elements can chare the same name. This allows you to have several buttons with equal names, which can submit different values when used in a form. -->
+
+			<!-- The 'type' attribute of the <button> element specifies the type of button. Remembe to specify the type attribute for the button element, since different browsers may use different default types for the button element. 		There are 3 types of buttons:
+				1) <button type="button" - the button is a clickable button
+				2) <button type="submit" - the button is a submit button (submits form data)
+				3) <button type="reset" - the button is a reset button (resets the form data.) -->
+
+			<!-- The 'value' attribute specifies the initial value for a <button> in a <form>, But remember, the button and it's value is only submitted if the buton itself was used to submit the form.  -->
 		</form>
 	</body>
 </html>
