@@ -698,6 +698,101 @@
 				3) <button type="reset" - the button is a reset button (resets the form data.) -->
 
 			<!-- The 'value' attribute specifies the initial value for a <button> in a <form>, But remember, the button and it's value is only submitted if the buton itself was used to submit the form.  -->
+
+			
+			<input list="handshakes" placeholder="Common Types of Youth Handshake Greetings" size="50">
+			<datalist id="handshakes">
+				<option value="Slap-Five">
+				<option value="Knuckle-Pound">
+				<option value="Snap-Slap">
+				<option value="High-Five">
+			</datalist>
+
+			<!-- The <datalist> tag specifes a list of predefiend options for an input element. The <datalist> tag is used to provide an autocomplete feature on <input> elements. Users will see a drop-down list of pre-defined options as they input data. Use the <input> element's list attribute to bind it together with a <datalist> element. -->
+
+			<form action="demo_keygen.asp" method="get">
+				Bulb Manufacturer: <input type="text" name="user_name">
+				Encryption: <keygen name="security">
+				<input type="submit">
+			</form>
+
+			<form action="demo_keygen.asp" method="get">
+				Secret Middle Name: <input type="text" name="middle_name">
+				Encryption: <keygen name="security" autofocus>
+				<input type="submit">
+			</form>
+
+			<form action="demo_keygen.asp" method="get">
+				Secret Love-Interest: <input type="text" name="crush">
+				Encryption: <keygen name="security" desabled>
+				<input type="submit">
+			</form><br>
+			
+			<fieldset>
+				<form action="demo_keygen.asp" method="get" id="santaform">
+					Secret Santa Gift: <input type="text" name="gift">
+					<input type="submit">
+				</form>
+
+				Encryption: <keygen name="security" form="santaform">
+			</fieldset><br>
+
+			<fieldset><br>
+				<fieldset>
+					<form action="demo_keygen.asp" method="get">
+						Secret Blood Type: <input type="text" name="bloodtype">
+						Encryption: <keygen name="security" keytype="rsa">
+						<input type="submit">
+					</form>
+				</fieldset><br>
+
+				<fieldset>
+					<form action="demo_keygen.asp" method="get">
+						Secret Brain Type: <input type="text" name="braintype">
+						Encryption: <keygen name="security" keytype="dsa">
+						<input type="submit">
+					</form>
+				</fieldset><br>
+
+				<fieldset>
+					<form action="demo_keygen.asp" method="get">
+						Secret Book Type: <input type="text" name="booktype">
+						Encryption: <keygen name="security" keytype="ec">
+						<input type="submit">
+					</form>
+				</fieldset><br>	
+			</fieldset>		
+
+
+			
+			<!--  The <keygen> tag specifeis a key-pair generator field used for forms. When the form is submitted, the provate key is stored locally, and the public key is sent tot he server. In HTML5, there are six attributes values for the <keygen> tag. They are:
+
+				1) Autofocus - specifies that a <keygen> element should automatically get focus when the page loads.
+				2) Challange - spacifies that the value of the <keygen> element should be challanged when submitted. 
+				3) disabled - specifies that a <keygen> element should be disabled.
+				4) form = specifies one or more forms the <keygen> element belongs to. 
+				5) keytype - specifies the security algorythim of the key
+					* three types of security algorithm:
+					 - rsa
+					 - dsa
+					 - ec
+				6) name - defines the name fo the <keygen> element.  -->
+			
+			<!-- The 'Autofocus' attribute of the <keygen> element tag specifies teh <keygen> element that should automatically get focus when the page loads. The autofocus attribute is a boolean attribute, and is not currently supported in Firefox or Internet Explorer browsers.  -->
+
+			<!-- The 'Challenge' attribute of the <keygen> tag element, specifies a string that should be submitted along with the public key in increase the form security. -->
+
+			<!-- The 'disabled' attribute of the <keygen> element tag specifeis when an elemetn should be disabled. A disabled field is unusable and un-editable. The disabled attrbute can be set to keep a user from using the field until some other condition has been met (like selecting a checkbox) Then, a JavaScript could remove the disabled value, and make the field usable. The 'disabled' attribute is a boolean attribute. -->
+
+			<!-- The 'form' attribute of the <keygen> element specifies one or more forms that  <keygen> element belongs to. -->
+
+			<!-- The 'keytype' attribute of the <keygen> tag element, specifies the type of security encryption algorithm to use for generating the key. There are three common types of encryption algorithms, and three cooresponding values for this 'keytype' attribute. There are explained as follows:
+				1) RSA - specifies teh RSA security algorithm. The user may be given a choice of RSA key strengths. This is the default value.
+				2) DSA - specifies the DSA security algorithm. The user may be given a choice of DSA key sizes. 
+				3) EC - specifies the EC security algorithm. The user may be given a choice of EC key strengths.  -->
+
+			<!--  -->
+
 		</form>
 	</body>
 </html>
