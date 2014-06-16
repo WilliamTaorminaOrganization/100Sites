@@ -763,7 +763,13 @@
 				</fieldset><br>	
 			</fieldset>		
 
-
+			<fieldset><br>
+				<form action="demo_keygen.asp" method="get">
+					Username: <input type="text" name="username">
+					Encryption: <keygen name="security">
+					<input type="submit">
+				</form><br>
+			</fieldset>
 			
 			<!--  The <keygen> tag specifeis a key-pair generator field used for forms. When the form is submitted, the provate key is stored locally, and the public key is sent tot he server. In HTML5, there are six attributes values for the <keygen> tag. They are:
 
@@ -791,8 +797,27 @@
 				2) DSA - specifies the DSA security algorithm. The user may be given a choice of DSA key sizes. 
 				3) EC - specifies the EC security algorithm. The user may be given a choice of EC key strengths.  -->
 
-			<!--  -->
+			<!-- The 'name' attribute of the <keygen> element tag, is used to reference form data after the form has been subitted. The 'name' attribute specifies the name of the <keygen> element.  -->
 
+			<fieldset><br>
+				<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+				  <input type="range" id="a" value="50">100
+				  +<input type="number" id="b" value="50">
+				  =<output name="x" for="a b"></output>
+				</form>
+			</fieldset><br>
+
+			<!-- The <output> tag represents the result of a calculation (like one performed by a script). There are three attribute values for the <output> tag. They are:
+				1) for - specifes the relationship between the result of the calculation, and the elements used in the calculation.
+				2) form - specifies one or more forms the <output> element belongs to.
+				3) name - specifies the name of the <output> element. 
+
+				-->
+
+			<!-- The 'for' attribute of the <output> element specifies the relationship the result of the calculation and the elements used in the calculation. The 'for' attribute takes one value:
+				1) 'element_id' - specifies the space seperated list of one or more elements that specifies teh relationship between the result of the calculation, and the elements used in the calculation. -->
+
+			<!-- The 'name' attribute specifies the name of an output element. The name attribute is used to reference form data after it has been submitted. Or, to reference the element in a JavaScript.  -->
 		</form>
 	</body>
 </html>
